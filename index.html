@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Custodial Wallet for Ibex Shooter Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 100vh;
+    }
+
+    .wallet, .game {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .wallet {
+      background-color: #f4f4f4;
+    }
+
+    .game {
+      background-color: #ececec;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    h2 {
+      color: #666;
+    }
+
+    .balance p {
+      margin: 0;
+    }
+
+    .actions a {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .actions a:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wallet">
+      <h1>Non-Custodial Wallet</h1>
+      <div class="balance">
+        <h2>Wallet Balance</h2>
+        <p>Balance: <span id="balance">0 IBEX</span></p>
+      </div>
+      <div class="actions">
+        <h2>Actions</h2>
+        <a href="#" id="send-button">Send IBEX</a>
+        <a href="#" id="receive-button">Receive IBEX</a>
+      </div>
+    </div>
+    <div class="game">
+      <h1>Ibex Shooter Game</h1>
+      <!-- Embed Ibex Shooter Game iframe -->
+      <iframe src="ibex-shooter-game.html" frameborder="0" width="100%" height="100%" target="_self"></iframe>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
